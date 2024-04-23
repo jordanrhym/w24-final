@@ -214,7 +214,7 @@ html{
 }
 
 #welc div:first-child{
-  grid-column: 2 / span 1;
+  grid-column: 1 / -1;
   background-image: url("../img/Ted Buckner Band at Club Three Sixes copy.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -222,6 +222,10 @@ html{
   max-height: 600px;
   width: 100%;
   overflow:visible;
+}
+
+#welc div:last-child{
+  grid-column: 1 / -1;
 }
 
 #history {
