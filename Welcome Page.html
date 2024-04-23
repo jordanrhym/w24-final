@@ -29,7 +29,7 @@
 
 
     </header>
-    <main class="contain" id = "main">
+    <main class="contain" id = "welc">
         <div class ="greeting" id = "scroll">
             <h1>Welcome</h1>
             <p>Welcome to the Black Music Venues in Paradise Valley, Detroit Digital Archive!  Our goal for this archive is to highlight Black-owned music venues and spaces for Black performers that once exhisted in the historical Paradise Valley business district.  Four bars are highlighted in our archive including the Club 666 (Three-Sixes), the 606 Horseshoe Lounge, Paradise Theater, and The Flame Show Bar.  Pictures, souvenir programs, advertisement flyers, and interviews are included to capture the memory and community in Paradise Valley.</p>
@@ -56,8 +56,26 @@
         <div class="contact" id="contact">
             <h2>Contact Us!</h2>
             <p>Have a question about the archive? Want to know more about the history of Paradise Valley? Reach out to us!</p>
-            <form>
-                <!-- enter contact information -->
+            <form
+                action="https://formspree.io/f/xpzvkkaa"
+                method="POST">
+
+                <label for="name">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="name">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <div>
+                    <input type="submit" value="Submit">
+
+                    <button type="reset">Reset</button>
+                </div>
             </form>
     </main>
     <script src="js/script.js"></script>

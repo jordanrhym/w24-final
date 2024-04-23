@@ -16,7 +16,7 @@
             <nav>
                 <div class="topnav">
                     <ul>
-                        <li><a class="active" href="Clubs.html">Club 666</a></li>
+                        <li><a class="active" href="Clubs.html">Paradise Valley Establishments</a></li>
                         <div id="myLinks">
                             <li><a href="Welcome Page.html">Welcome Page</a></li>
                             <li><a href="Project Description.html">Project Description</a></li>
@@ -101,8 +101,26 @@
           <div class="contact" id="share">
             <h2>Contact Us!</h2>
             <p>Have a question about the archive? Want to know more about the history of Paradise Valley? Reach out to us!</p>
-            <form>
-                <!-- enter contact information -->
+            <form
+                action="https://formspree.io/f/xpzvkkaa"
+                method="POST">
+
+                <label for="name">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="name">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <div>
+                    <input type="submit" value="Submit">
+
+                    <button type="reset">Reset</button>
+                </div>
             </form>
         </main>
         <script src="js/script.js"></script>

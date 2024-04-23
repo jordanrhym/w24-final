@@ -105,8 +105,26 @@
           <div class="contact" id="contact">
             <h2>Contact Us!</h2>
             <p>Have a question about the archive? Want to know more about the history of Paradise Valley? Reach out to us!</p>
-            <form>
-                <!-- enter contact information -->
+            <form
+                action="https://formspree.io/f/xpzvkkaa"
+                method="POST">
+
+                <label for="name">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="name">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <div>
+                    <input type="submit" value="Submit">
+
+                    <button type="reset">Reset</button>
+                </div>
             </form>
         </main>
         <script src="js/script.js"></script>
