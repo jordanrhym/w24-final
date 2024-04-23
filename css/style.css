@@ -16,22 +16,22 @@
   height: auto;
 }
 /* I utilized W3W's How To - Mobile Navigattion Menu (https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) to set up this hamburger drop dowm menu design */
-  .topnav {
+.topnav {
     background-color: whitesmoke;
     position: relative;
   }
-  
-  .topnav #myLinks {
+
+.topnav #myLinks {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks li {
+.topnav #myLinks li {
     display: block;
   }
   /* Style navigation menu links */
-  .topnav a {
+.topnav a {
     color: black;
     padding: 2% 2%;
     /* width: 100%; */
@@ -39,24 +39,24 @@
     font-size: 17px;
     display: block;
   }
-  
+
   /* Style the hamburger menu */
-  .topnav a.icon {
+.topnav a.icon {
     background: whitesmoke;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
   }
-  
+
   /* Add a grey background color on mouse-over */
-  .topnav a:hover {
+.topnav a:hover {
     background-color: rgb(112, 128, 132);
     color: black;
   }
-  
+
   /* Style the active link (or home/logo) */
-  .active {
+.active {
     background-color: rgb(142, 168, 175);
     color: white;
   }
@@ -65,7 +65,6 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-
 
 header{
   padding: 15px 10px 15px 0px;
@@ -142,6 +141,11 @@ img{
   position: relative;
   width: 100%;
 }
+
+.gallery img {
+  width: 90%;
+}
+
 .button-right, .button-left {
   position: absolute;
   background-color: midnightblue;
@@ -157,10 +161,6 @@ img{
   display: inline-block;
   font-size: 16px;
 
-}
-
-.gallery img {
-  width: 90%;
 }
 
 .button-right {
@@ -235,10 +235,6 @@ html{
 #engage{
   grid-column: 2 / span 1;
 }
-
-/* #contact{
-  grid-column: 2 / span 1;
-} */
 
 form {
   display: grid;
@@ -324,7 +320,6 @@ input [type=button] {
 }
 /* Project Description page css styling */
 
-
 .venue img{
   display: none;
 }
@@ -397,7 +392,7 @@ input [type=button] {
  }
 
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 768px) {
 
   .topnav {
     background-color: whitesmoke;
@@ -416,10 +411,6 @@ input [type=button] {
     /* margin-right: 20px; */
   }
 
-  /* .topnav .active {
-    background-color: rgb(142, 168, 175);
-    color: black;
-  } */
   .topnav a {
     color: black;
     padding: 14px 16px;
@@ -451,10 +442,7 @@ input [type=button] {
     width:auto ;
   } 
 
-  /* Adjjust Parallex height  */
-  /* #scroll{
-    height: 600px;
-  } */
+
   /* Adjust font sizes */
   p{
     font-size: 3vw;
@@ -462,63 +450,58 @@ input [type=button] {
 /* Include grid for Project Description Page */
 
   .venue {
-  display: grid;
-  grid-template-columns: 50px auto 500px auto 50px;
-  grid-gap: 15px;
-  justify-items: center;
-  height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-gap: 15px;
+    justify-items: center;
+    height: 400px;
+    padding: 5%;
   }
 
-
   .venue div:first-child{
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
   }
 
   .focus-img, .focus-text{
-    grid-column: 2 /  span 2;
-    grid-row: 2;
+  grid-column: 2 /  span 3;
+  grid-row: 2;
   }
 
   .consid-img, .consid-text{
-    grid-column: 3 /  span 2;
-    grid-row: 3;
+  grid-column: 3 /  span 3;
+  grid-row: 3;
   }
 
   .criteria-img, .criteria-text{
-    grid-column: 2 /  span 2;
-    grid-row: 4;
+  grid-column: 2 /  span 3;
+  grid-row: 4;
   }
 
   .target-img, .target-text{
-    grid-column: 3 /  span 2;
-    grid-row: 5;
+  grid-column: 3 /  span 3;
+  grid-row: 5;
   }
 
   .per-img, .per-text{
-    grid-column: 2 /  span 2;
-    grid-row: 6;
+  grid-column: 2 /  span 3;
+  grid-row: 6;
   }
 
-  .venue div:last-child, .contain div:last-child{
-    grid-column: 1 / -1;
+  .venue div:last-child{
+  grid-column: 1 / -1;
   }
-
-  .focus-text, .consid-text, .criteria-text, .target-text, .per-text {
-    background-color: rgba(255, 255, 255, .8);
-    border: 2px solid black;
-    border-radius: 10%;
-    overflow: auto;
-    /* padding: 10px; */
-    width: 100%;
-    /* text-align: center; */
-    margin: 0;
+  
+  .button-right {
+    right: 12%;
   }
-
+  .button-left {
+    left: 12%;
+  }
 
   }
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1023px) {
   
   h2 {
     /* font-size: 2vw; */
@@ -527,73 +510,61 @@ input [type=button] {
     /* padding: 5%; */
   }
 
-  .button-right {
-    right: 37%;
-    top: 106%;
-  }
-  .button-left {
-    left: 37%;
-    top: 106%;
-  }
   .gallery img {
     height: 600px;
   }
-
   .venue {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr;
-    grid-gap: 50px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-gap: 30px;
     justify-items: center;
-    height: 400px;
-    padding: 5%;
-   }
+    height: 600px;
+    }
   
-   .venue div:first-child{
-  grid-column: 1 / -1;
-  }
-
-  .focus-img, .focus-text{
-  grid-column: 1 /  span 4;
-  grid-row: 2;
-  }
-
-  .consid-img, .consid-text{
-  grid-column: 3 /  span 4;
-  grid-row: 3;
-  }
-
-  .criteria-img, .criteria-text{
-  grid-column: 1 /  span 4;
-  grid-row: 4;
-  }
-
-  .target-img, .target-text{
-  grid-column: 3 /  span 4;
-  grid-row: 5;
-  }
-
-  .per-img, .per-text{
-  grid-column: 1 /  span 4;
-  grid-row: 6;
-  }
-
-  .venue div:last-child{
-  grid-column: 1 / -1;
-  }
-}
-
-
-
-@media screen and (min-width: 1023px) {
+    .venue div:first-child{
+      grid-column: 1 / -1;
+    }
   
-  .button-right {
-    right: 37%;
-    top: 107%;
-  }
-  .button-left {
-    left: 37%;
-    top: 107%;
-  }
+    .focus-img, .focus-text{
+      grid-column: 2 /  span 2;
+      grid-row: 2;
+    }
+  
+    .consid-img, .consid-text{
+      grid-column: 4 /  span 2;
+      grid-row: 2;
+    }
+  
+    .criteria-img, .criteria-text{
+      grid-column: 2 /  span 2;
+      grid-row: 3;
+    }
+  
+    .target-img, .target-text{
+      grid-column: 4 /  span 2;
+      grid-row: 3;
+    }
+  
+    .per-img, .per-text{
+      grid-column: 2 /  span 2;
+      grid-row: 4;
+    }
+  
+    .venue div:last-child, .contain div:last-child{
+      grid-column: 1 / -1;
+    }
+  
+    .focus-text, .consid-text, .criteria-text, .target-text, .per-text {
+      background-color: rgba(255, 255, 255, .8);
+      border: 2px solid black;
+      border-radius: 10%;
+      overflow: auto;
+      /* padding: 10px; */
+      width: 100%;
+      /* text-align: center; */
+      margin: 0;
+    }
+
   .gallery img {
     height: 600px;
   }
@@ -608,44 +579,12 @@ input [type=button] {
   p{
     font-size: 2vw;
   }
-  .venue {
-    display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    grid-gap: 50px;
-    justify-items: center;
-    height: 600px;
-   }
-  
-   .venue div:first-child{
-  grid-column: 1 / -1;
-  }
 
-  .focus-img, .focus-text{
-  grid-column: 2 /  span 1;
-  grid-row: 2;
+  .button-right {
+    right: 10%;
   }
-
-  .consid-img, .consid-text{
-  grid-column: 3 /  span 1;
-  grid-row: 2;
-  }
-
-  .criteria-img, .criteria-text{
-  grid-column: 4 /  span 1;
-  grid-row: 2;
-  }
-
-  .target-img, .target-text{
-  grid-column: 2 /  span 1;
-  grid-row: 3;
-  }
-
-  .per-img, .per-text{
-  grid-column: 3 /  span 1;
-  grid-row: 3;
-  }
-
-  .venue div:last-child{
-  grid-column: 1 / -1;
+  .button-left {
+    left: 10%;
   }
 }
+
