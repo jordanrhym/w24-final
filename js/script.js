@@ -14,17 +14,17 @@ function myFunction() {
   showDivs(1, 2);
   showDivs(1, 3);
   
-  function plusDivs(n, no) {
-    showDivs(slideIndex[no] += n, no);
+  function plusDivs(n, index) {
+    showDivs(slideIndex[index] += n, index);
   }
   
-  function showDivs(n, no) {
+  function showDivs(n, index) {
     var i;
-    var x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {slideIndex[no] = 1}
-    if (n < 1) {slideIndex[no] = x.length}
+    var x = document.getElementsByClassName(slideId[index]);
+    if (n > x.length) {slideIndex[index] = 1}
+    if (n < 1) {slideIndex[index] = x.length}
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";  
     }
-    x[slideIndex[no]-1].style.display = "block";  
+    x[slideIndex[index]-1].style.display = "block";  
   }
