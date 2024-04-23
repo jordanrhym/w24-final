@@ -60,8 +60,8 @@ document.querySelectorAll('#myLinks a').forEach(item => {
   // Event listeners for the left and right buttons for each slideshow.
   // document.querySelectorAll('.button-left') selects all elements with the class name button-left
   document.querySelectorAll('.button-left').forEach(item => {
-    // item.addEventListener('click', function() looks out for clicks on the button-left class
-    item.addEventListener('click', function() {
+    // item.addEventListener('click', event => looks out for clicks on the button-left class
+    item.addEventListener('click', event => {
         console.log('Left button clicked');
         // PlusDivs calls for the slideshow to go back one slide
         plusDivs(-1, Number(item.getAttribute('data-slideshow-index')));
@@ -69,7 +69,7 @@ document.querySelectorAll('#myLinks a').forEach(item => {
 });
 
 document.querySelectorAll('.button-right').forEach(item => {
-    item.addEventListener('click', function()  {
+    item.addEventListener('click', event =>  {
         console.log('Right button clicked');
         plusDivs(1, Number(item.getAttribute('data-slideshow-index')));
     });

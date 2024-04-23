@@ -241,11 +241,11 @@ html{
 }
 
 #history {
-  grid-column: 2 / span 1;
+  grid-column: 1 / -1;
 }
 
 #engage{
-  grid-column: 2 / span 1;
+  grid-column: 1 / -1;
 }
 
 form {
