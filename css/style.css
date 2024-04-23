@@ -105,7 +105,7 @@ ol li {
   float: none;
   margin: 1% 10% 1% 15%;
 }
-
+/* Style the Introduction information (including h1 and introductory paragraphs) using an id selector */
 #head.greeting {
   text-align: center;
   margin: 0 auto;
@@ -115,12 +115,13 @@ ol li {
   border: none 1px solid;
   border-radius: 10px;
 }
-
+/* Style the paragraphs sizing for all introduction oparagraphs on all three pages. */
 .greeting p {
   color: black;
   /* margin: 2% 10% 2% 10%; */
 }
 
+/* Edit the formatting of text in the Parallax section of the Welcome Page */
 #scroll.greeting {
   text-align: center;
   margin: 0 auto;
@@ -131,27 +132,32 @@ ol li {
 }
 
 /* Clubs Slideshow Styling */
+/* Center slideshow images */
 .paradise .zero .three .flame {
   margin: 0px auto;
 }
 
+/* Style ALL images on the website */
 img{
   width: 100%;
   margin: 0 auto;
   height: 400px;
   object-fit:contain;
 }
+/* Style the slideshow containers */
 .gallery {
   justify-content: center; /* Horizontally center items */
   align-items: center; /* Vertically center items */
   position: relative;
   width: 100%;
 }
-
+/* Set slideshow images to 90% of page width */
 .gallery img {
   width: 90%;
 }
 
+/* Styling of buttons. This will adjust at each breakpoint to account for changing sizing of slideshow images */
+/* Buttons have to be adjust due to absolute positioning */
 .button-right, .button-left {
   position: absolute;
   background-color: midnightblue;
@@ -168,7 +174,7 @@ img{
   font-size: 16px;
 
 }
-
+/* Adjusts the button's distance from the right and left side of the webpage */
 .button-right {
   right: 2%;
 }
@@ -180,7 +186,7 @@ img{
 html{
   scroll-behavior: smooth;
 }
-
+/* Set the sizing of the feature and place it within the grid across the fiull horizontal size of the website */
 #scroll{
   display: grid;
   grid-column: 1 / -1;
@@ -196,7 +202,7 @@ html{
   background-color: none;
   text-align: center;
 }
-
+/* Height will be adjusted at each breakpoint */
 #scroll img {
   width: 100%;
   height: 150px;
@@ -218,7 +224,7 @@ html{
   row-gap: 15px;
   column-gap: 15px;
 }
-
+/* Set parallax welcome feature  */
 #welc div:first-child{
   grid-column: 1 / -1;
   background-image: url("../img/Ted Buckner Band at Club Three Sixes copy.jpg");
@@ -400,9 +406,19 @@ input [type=button] {
 
 @media screen and (min-width: 768px) {
 
+  header {
+    padding: 15px 10px 15px 0px;
+    margin: 10px;
+  }
+
+  header p{
+    font-size: 3vw;
+  }
+
   .topnav {
     background-color: whitesmoke;
     overflow: hidden;
+    position: relative;
   }
 
   .topnav #myLinks { 
@@ -412,19 +428,23 @@ input [type=button] {
     display: inline;
     background-color: whitesmoke;
   }
-
-  .topnav #myLinks li {
-    display: inline-block;
-    /* margin-right: 20px; */
-  }
-
   .topnav a {
+    float: left;
     color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: inline-block;
+    /* display: inline-block; */
   }
+  .topnav a.icon {
+    float: right;
+  }
+
+  /* .topnav #myLinks li {
+    display: inline-block;
+    /* margin-right: 20px; */
+
+
 
   .topnav a:hover {
     background-color: rgb(112, 128, 132);
@@ -435,13 +455,14 @@ input [type=button] {
     background-color: rgb(142, 168, 175);
     color: white;
     font-weight: bolder;
+    font-size: 4vw;
     /* display:inline-block; */
   }
 
-  .topnav ul{
+  /* .topnav ul{
     text-align: center;
     width:auto ;
-  } 
+  }  */
 
 
   /* Adjust font sizes */
