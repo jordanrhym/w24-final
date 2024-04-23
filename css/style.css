@@ -227,7 +227,7 @@ html{
 /* Set parallax welcome feature  */
 #welc div:first-child{
   grid-column: 1 / -1;
-  background-image: url("../img/Ted Buckner Band at Club Three Sixes copy.jpg");
+  background-image: url("../img/Ted_Buckner_Band_at_Club_Three_Sixes_copy.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
