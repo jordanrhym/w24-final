@@ -432,7 +432,10 @@ input [type=button] {
   }
   .active li {
     display: inline-block;
-  
+  }
+
+  .topnav ul{
+    text-align: center;
   }
 
   /* Adjjust Parallex height  */
