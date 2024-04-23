@@ -176,6 +176,8 @@ html{
 }
 
 #scroll{
+  display: grid;
+  grid-column: 1 / -1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +185,7 @@ html{
   /* max-height: 600px;
   width: 100%; */
   background-size: cover;
-  height: 300px;
+  /* height: 300px; */
   /* overflow:visible; */
   background-color: none;
   text-align: center;
@@ -191,6 +193,7 @@ html{
 
 #scroll img {
   width: 100%;
+  height: 150px;
   /* height: 100%; */
   /* object-fit: cover; */
 }
@@ -389,7 +392,7 @@ input [type=button] {
  }
 
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 630px) {
 
   .topnav {
     background-color: whitesmoke;
@@ -444,9 +447,9 @@ input [type=button] {
   } 
 
   /* Adjjust Parallex height  */
-  #scroll{
+  /* #scroll{
     height: 600px;
-  }
+  } */
   /* Adjust font sizes */
   p{
     font-size: 3vw;
