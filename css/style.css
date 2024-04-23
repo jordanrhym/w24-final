@@ -286,8 +286,9 @@ textarea {
 input[type="submit"], input [type=button] {
   width: 100%;
   padding: 10px;
-  background-color: rgb(199, 86, 45);
-  color: white;
+  background-color: rgb(192, 118, 118);
+  color: black;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
