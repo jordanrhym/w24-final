@@ -232,9 +232,9 @@ html{
   grid-column: 2 / span 1;
 }
 
-#contact{
+/* #contact{
   grid-column: 2 / span 1;
-}
+} */
 
 form {
   display: grid;
@@ -283,7 +283,7 @@ input[type="submit"], input [type=button] {
   width: 100%;
   padding: 10px;
   background-color: rgb(199, 86, 45);
-  color: black;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -494,7 +494,7 @@ input [type=button] {
     grid-row: 6;
   }
 
-  .venue div:last-child{
+  .venue div:last-child, .contain div:last-child{
     grid-column: 1 / -1;
   }
 
