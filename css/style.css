@@ -21,6 +21,10 @@
     position: relative;
   }
 
+.topnav li {
+  background-color:rgb(142, 168, 175);
+}
+
 .topnav #myLinks {
     list-style-type: none;
     margin: 0;
@@ -29,6 +33,7 @@
   /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks li {
     display: block;
+    background-color: whitesmoke;
   }
   /* Style navigation menu links */
 .topnav a {
@@ -59,6 +64,7 @@
 .active {
     background-color: rgb(142, 168, 175);
     color: white;
+    font-weight: bolder;
   }
 
 /* Below is the general styling I used for the general elemenetas across all of my wbsite pages. */
@@ -404,6 +410,7 @@ input [type=button] {
     margin: 0;
     padding: 0;
     display: inline;
+    background-color: whitesmoke;
   }
 
   .topnav #myLinks li {
@@ -418,10 +425,6 @@ input [type=button] {
     font-size: 17px;
     display: inline-block;
   }
-  
-  .topnav a.icon {
-    display: none;
-  }
 
   .topnav a:hover {
     background-color: rgb(112, 128, 132);
@@ -431,11 +434,9 @@ input [type=button] {
   .active {
     background-color: rgb(142, 168, 175);
     color: white;
+    font-weight: bolder;
     /* display:inline-block; */
   }
-  /* .active li {
-    display: inline-block;
-  } */
 
   .topnav ul{
     text-align: center;
