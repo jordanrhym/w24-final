@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Welcome Page</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href="#welc">Skip to Main Content</a></div>
+        <nav class="topnav">
+            <a class="active" href="Welcome.html">Welcome Page</a>
+            <div id="myLinks">
+                <a href="Description.html">Project Description</a>
+                <a href="Clubs.html">Paradise Valley Clubs</a>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <main class="contain" id = "welc">
+        <div class ="greeting" id = "scroll">
+            <h1>Black Music Venues in Paradise Valley Detroit</h1>
+            <p>Welcome to the Black Music Venues in Paradise Valley, Detroit Digital Archive!  Our goal for this archive is to highlight Black-owned music venues and spaces for Black performers that once exhisted in the historical Paradise Valley business district.  Four bars are highlighted in our archive including the Club 666 (Three-Sixes), the 606 Horseshoe Lounge, Paradise Theater, and The Flame Show Bar.  Pictures, souvenir programs, advertisement flyers, and interviews are included to capture the memory and community in Paradise Valley.</p>
+        </div>
+
+        <div class="welc" id="history">
+            <h2>Brief History of Paradise Valley</h2>
+            <p>
+                Paradise Valley was a business district and entertainment center to the Black Bottom neighborhood in Detroit—a densely populated African-American residential area (Detroit Historical Society). The district was a hub of Black-owned businesses from the 1920s until the 1950s. Detroit's thriving automobile business, in addition to the existing movement of the Great Migration, attracted a substantial African-American migration in the 1900s. Due to racial housing discrimination, the surging Black population in Detroit was restricted to neighborhoods like Black Bottom, named after its fertile and dark soil (Zlatopolsky, 2015). As Black Bottom's population grew Hastings and St. Antoine emerged as cultural hubs.</p>
+            <p>
+                Leading north from these streets was Paradise Valley — fondly likened to Detroit's Las Vegas for its extravagant nightlife. Among the first neighborhoods in Detroit to integrate Black and white residents, it thrived in the 1930s and 1940s as a hub for "black and tan" venues (locations where Black artists performed for integrated Black and white audiences), where diverse audiences enjoyed performances by Black artists (Zlatopolsky, 2015). Artists included major names in jazz and popular music, such as, Duke Ellington, Dinah Washington, the Ink Spots, Sarah Vaughan, Billie Holiday, Ella Fitzgerald, Dizzy Gillespie, Billy Eckstine, Count Basie, Nat King Cole, Sammy Davis Jr., Louis Armstrong, and Maurice King. Adjacent to the boundaries of Paradise Valley stood the influential Paradise Theater on Woodward Avenue. Regularly hosting top Black entertainers, the theater enjoyed a successful but brief run from 1941 to 1951 (Zlatopolsky, 2015). </p>
+            <p>
+                Unfortunately, political decisions, failed urban renewal efforts, racial tension, and housing issues led to the demise of Black Bottom and Paradise Valley neighborhood and district. Rather than restoring Black Bottom, officials saw it as an opportunity for complete redevelopment, erasing the musical heritage as concrete covered Hastings Street for I-375 during the Walter P. Chrysler Freeway construction projects (DHS). I-375's construction severely impacted Paradise Valley, leading to the current consideration of demolition as officials argue it segregates downtown Detroit neighborhoods (Zlatopolsky, 2015). Despite acknowledging Detroit's unsuccessful urban freeway system today, the historical significance of the area remains lost. 
+            </p>
+        </div>
+
+        <div class="welc" id="engage">
+            <h2>Engage</h2>
+
+            <p>
+                Please engage with our archive! If you have any questions about materials included in the archive, feel free to reach out to use via the "Contact Us!" submission form. If you would like to contribute directly to the archive with your own materials, please fill out a  "Share Your Memories of Paradise Valley" submission form. These forms can be found on the "Paradise Valley Clubs" Pages of the archive. Submitted materials do not need to relate to the Flame Show Bar, Club 666, 606 Horseshoe Lounge, or Paradise Theater. Any and all materials are appreciated!
+            </p>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact Us!</h2>
+            <p>Have a question about the archive? Want to know more about the history of Paradise Valley? Reach out to us!</p>
+            <form
+                action="https://formspree.io/f/xpzvkkaa"
+                method="POST">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <div>
+                    <input type="submit" value="Submit">
+
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
