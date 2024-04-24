@@ -321,7 +321,7 @@ input [type=button] {
   }
 
   .skip a{
-    -webkit-transition: none; /* sets to default setting */
+    /* -webkit-transition: none; sets to default setting */
     transition: none;        /* sets to default setting */
    }
 
