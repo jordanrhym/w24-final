@@ -199,7 +199,7 @@ html{
   background-size: cover;
   /* height: 300px; */
   /* overflow:visible; */
-  background-color: none;
+  background-color: midnightblue;
   text-align: center;
 }
 /* Height will be adjusted at each breakpoint */
