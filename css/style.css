@@ -217,7 +217,7 @@ html{
   font-weight: normal;
   width: 80%;
 }
-
+/* Introduce grid design to welcome page */
 #welc{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -235,7 +235,7 @@ html{
   width: 100%;
   overflow:visible;
 }
-
+/* Set the contact form and history/engage divs at the same width as the page */
 #welc div:last-child{
   grid-column: 1 / -1;
 }
@@ -247,7 +247,7 @@ html{
 #engage{
   grid-column: 1 / -1;
 }
-
+/* Constuction of the Contact Form for the digital Archive: */
 form {
   display: grid;
   grid-template-columns: 100%;
@@ -314,7 +314,7 @@ input [type=button] {
   padding: 15px;
   width: 100%;
 }
-
+/* Provide  reduced motion options for the parallax feature*/
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; /* Removes scroll animation */
@@ -322,7 +322,7 @@ input [type=button] {
 
   .skip a{
     /* -webkit-transition: none; sets to default setting */
-    transition: none;        /* sets to default setting */
+    transition: none;       
    }
 
   /*Turn off parallax*/
@@ -331,7 +331,7 @@ input [type=button] {
   }
 }
 /* Project Description page css styling */
-
+/* Remove background image until we reach a page break of 768px */
 .venue img{
   display: none;
 }
@@ -339,7 +339,7 @@ input [type=button] {
   font-size: 2vw;
 }
 
-
+/* Set Establish,ent page into a grid with a simple one column approach for mobile view*/
 .venue {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
@@ -403,7 +403,7 @@ input [type=button] {
    margin: 0;
  }
 
-
+/* Tablet View styling */
 @media screen and (min-width: 768px) {
 
   header {
@@ -414,7 +414,7 @@ input [type=button] {
   header p{
     font-size: 3vw;
   }
-
+/* Introduce horizontal hamburger dropdown menu to replace vertical hamburger navbar. */
   .topnav {
     background-color: whitesmoke;
     overflow: hidden;
@@ -522,7 +522,7 @@ input [type=button] {
 
   }
 
-
+/* Breakpoint for Desktop screen view */
 @media screen and (min-width: 1023px) {
   
   h2 {
@@ -531,10 +531,11 @@ input [type=button] {
     color: brown;
     /* padding: 5%; */
   }
-
+/* Adjust slideshow height for a larger screen view */
   .gallery img {
     height: 600px;
   }
+  /* Two images per column to efficiently use additional screen space */
   .venue {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
@@ -601,7 +602,7 @@ input [type=button] {
   p{
     font-size: 2vw;
   }
-
+/* Adjust button format for larger screen */
   .button-right {
     right: 10%;
   }
